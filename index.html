@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Studio 漫遊</title>
+    <style>
+      /* 2026-10-01：操作說明（照 WebGL 版：視角按鈕旁的「?」，滑鼠移過去或鍵盤聚焦時浮現說明）。 */
+      .help-wrapper { flex: 0 0 auto; display: flex; align-items: center; padding: 0 2px; }
+      .controls .help-btn {
+        flex: 0 0 24px; width: 24px; height: 24px; min-height: 0; padding: 0; border-radius: 50%;
+        font-size: 12px; line-height: 1; cursor: help;
+      }
+      .controls .help-btn:focus-visible { outline: 1px solid rgba(140, 130, 115, .8); outline-offset: 2px; }
+      .help-tip {
+        position: absolute; left: 0; bottom: calc(100% + 6px); z-index: 11;
+        padding: 12px 14px; border: 1px solid rgba(255, 255, 255, .05); border-radius: 4px;
+        color: #aaa; background: rgba(28, 28, 26, .95); backdrop-filter: blur(10px);
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, .5), 0 4px 15px rgba(0, 0, 0, .4);
+        font: 11px/1.8 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif;
+        letter-spacing: .5px; white-space: nowrap;
+        opacity: 0; transform: translateY(5px); pointer-events: none; transition: opacity .2s, transform .2s;
+      }
+      .help-tip kbd { color: #d3d3d1; font: inherit; }
+      .help-wrapper:hover .help-tip, .help-wrapper:focus-within .help-tip { opacity: 1; transform: translateY(0); }
+      @media (prefers-reduced-motion: reduce) { .help-tip { transition: none; } }
+    </style>
+    <script type="module" crossorigin src="./assets/gate5cLiveR17-B0-1PlEK.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/gate5cLiveR17--fUbH0Fe.css">
+  </head>
+  <body>
+    <div id="gate5c-loading" class="gate5c-loading" role="status" aria-live="polite" aria-label="R17 載入中" data-progress="0">
+      <div class="gate5c-loading-card">
+        <div class="gate5c-loading-progress" aria-hidden="true">
+          <svg viewBox="0 0 80 80">
+            <circle class="gate5c-loading-track" cx="40" cy="40" r="36"></circle>
+            <circle id="gate5c-loading-ring" class="gate5c-loading-ring" cx="40" cy="40" r="36"></circle>
+          </svg>
+          <span id="gate5c-loading-percent" class="gate5c-loading-percent">0%</span>
+        </div>
+        <p class="gate5c-loading-brand">WEBGPU C2 LIVE</p>
+        <strong>Home Studio 漫遊</strong>
+        <span id="gate5c-loading-message">正在準備固定場景資源</span>
+      </div>
+    </div>
+    <main>
+      <section class="frame" aria-label="R17 燈具＋2048 間接光 LIVE 畫面">
+        <canvas id="room" width="1920" height="1080" tabindex="0"></canvas>
+        <nav class="controls" aria-label="視角控制">
+          <div class="control-row" aria-label="視角工具">
+            <button id="copy-camera-pose" type="button">複製視角</button>
+            <button id="paste-camera-pose" type="button">貼上視角</button>
+          </div>
+          <div class="control-row" aria-label="相機切換">
+            <button type="button" data-camera="Camera_View_01">Cam 1</button>
+            <button type="button" data-camera="Camera_View_02">Cam 2</button>
+            <button type="button" data-camera="Camera_View_03">Cam 3</button>
+            <span class="help-wrapper">
+              <button class="help-btn" type="button" aria-label="操作說明" aria-describedby="help-tip">?</button>
+              <span id="help-tip" class="help-tip" role="tooltip">
+                [滑鼠] 點畫面開始轉視角｜再點一下或 <kbd>Esc</kbd> 放開<br>
+                [鍵盤] <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> 移動｜<kbd>E</kbd> 上升｜<kbd>C</kbd> 下降<br>
+                Cam 1～3 切換預設視角｜右下角眼睛可隱藏介面<br>
+                走出牆外可看剖面，往上飛可俯瞰；家具會擋住鏡頭
+              </span>
+            </span>
+          </div>
+        </nav>
+        <div class="metrics" aria-label="即時效能資訊">
+          <span>FPS <output id="render-fps">0.0</output></span>
+          <span>反射 SPP <output id="reflection-spp">關閉</output></span>
+        </div>
+        <button id="hide-ui" class="hide-ui" type="button" title="隱藏 UI" aria-label="隱藏 UI" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path d="M2 12c.94-3.46 4.35-6 8-6s7.06 2.54 8 6c-.94 3.46-4.35 6-8 6s-7.06-2.54-8-6Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </section>
+      <div class="runtime-data" aria-hidden="true">
+        <output id="status">R15 貼圖診斷啟動中</output>
+        <output id="samples">0 / 32</output>
+        <output id="backend">讀取中</output>
+        <output id="controls-status">點畫面啟用</output>
+      </div>
+      <output id="state" hidden></output>
+    </main>
+    <script>
+      let storedParams = '';
+      try { storedParams = sessionStorage.getItem('r16-page-params') || ''; } catch (e) { storedParams = ''; }
+      // 本機版：網址錨點含「=」時，runtime 以錨點參數為準；這裡同步使用，按鈕切換時再寫回 sessionStorage 並去掉錨點。
+      // 比較用按鈕（R13 原版、燈具 舊、GIK 過濾 關）已移除：清掉先前留在 sessionStorage 的比較設定，固定使用正式組合。
+      {
+        const cleaned = new URLSearchParams(storedParams);
+        for (const key of ['atlas', 'lamp', 'directMip', 'lampBake', 'cameraState', 'camera']) cleaned.delete(key);
+        try { sessionStorage.setItem('r16-page-params', cleaned.toString()); } catch (e) {}
+        storedParams = cleaned.toString();
+      }
+      if (location.hash.slice(1).includes('=')) storedParams = location.hash.slice(1);
+      const variant = new URLSearchParams(storedParams).get('atlas') || 'r16';
+      const labels = { '2048': 'R13 原版 2048（有黑邊）', 'r16': 'R16 修正版 2048' };
+      const sp0 = new URLSearchParams(storedParams);
+      const r17Bake = variant === 'r16' && sp0.get('lamp') !== 'old' && sp0.get('lampBake') !== '0';
+      // 比較功能已移除，runtime 固定使用新燈重烤 2048。
+      const label = '新燈重烤 2048';
+      document.title = 'Home Studio 漫遊';
+      document.body.dataset.atlasVariant = variant;
+      const mipOn = new URLSearchParams(storedParams).get('directMip') !== '0';
+      for (const b of document.querySelectorAll('.r16-mip')) {
+        b.dataset.active = String((b.dataset.mip === '1') === mipOn);
+        b.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const p = new URLSearchParams(storedParams);
+          p.set('directMip', b.dataset.mip);
+          if (!p.has('atlas')) p.set('atlas', variant);
+          if (window.__R16_POSE__) p.set('cameraState', JSON.stringify(window.__R16_POSE__));
+          try { sessionStorage.setItem('r16-page-params', p.toString()); } catch (e) {}
+          location.replace(location.pathname + location.search);
+        });
+      }
+      const lampNew = new URLSearchParams(storedParams).get('lamp') !== 'old';
+      for (const b of document.querySelectorAll('.r17-lamp')) {
+        b.dataset.active = String((b.dataset.lamp === 'r17') === lampNew);
+        b.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const p = new URLSearchParams(storedParams);
+          p.set('lamp', b.dataset.lamp);
+          if (!p.has('atlas')) p.set('atlas', variant);
+          if (window.__R16_POSE__) p.set('cameraState', JSON.stringify(window.__R16_POSE__));
+          try { sessionStorage.setItem('r16-page-params', p.toString()); } catch (e) {}
+          location.replace(location.pathname + location.search);
+        });
+      }
+      for (const b of document.querySelectorAll('.r16-switch')) {
+        b.dataset.active = String(b.dataset.atlas === variant);
+        b.addEventListener('click', (ev) => {
+          ev.stopPropagation();
+          const p = new URLSearchParams(storedParams);
+          p.set('atlas', b.dataset.atlas);
+          if (window.__R16_POSE__) p.set('cameraState', JSON.stringify(window.__R16_POSE__));
+          try { sessionStorage.setItem('r16-page-params', p.toString()); } catch (e) {}
+          location.replace(location.pathname + location.search);
+        });
+      }
+    </script>
+  </body>
+</html>

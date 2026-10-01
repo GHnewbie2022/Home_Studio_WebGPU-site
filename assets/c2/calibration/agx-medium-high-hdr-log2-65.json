@@ -1,0 +1,102 @@
+{
+  "schema": "webgpu-c2-live-gate5c-agx-hdr-log2-lut-v1",
+  "captured_at": "2026-09-07T14:38:09+08:00",
+  "decision": "READY_FOR_ISOLATED_REVIEW",
+  "source": {
+    "blender_version": "5.2.0 LTS",
+    "ocio_config": "/Applications/Blender.app/Contents/Resources/5.2/datafiles/colormanagement/config.ocio",
+    "ocio_config_sha256": "47a7d83e79c1d21f49ba6c505efe311da723471688c614b5c366e1da7eb8ea3a",
+    "input_space": "Linear Rec.709",
+    "display": "sRGB",
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast"
+  },
+  "shaper": {
+    "formula": "log2(1 + max(linear, 0) / epsilon) / log_range",
+    "epsilon": 0.00017578139478918766,
+    "linear_max": 5898.240000132513,
+    "log_range": 24.999998854695697
+  },
+  "lut": {
+    "interpolation": "TETRAHEDRAL",
+    "cube_size": 65,
+    "float_count": 823875,
+    "bytes": 3295500,
+    "path": "/assets/c2/calibration/agx-medium-high-hdr-log2-65.bin",
+    "sha256": "bcb1e63ea095f9745a42be7d4813c24f32be6ea48c0ee1ee587b0fd50ad7aa97"
+  },
+  "validation": {
+    "maximum_absolute_error": 0.00039821863174438477,
+    "inputs": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        4.0,
+        3.228489875793457,
+        2.6051976680755615
+      ],
+      [
+        0.800000011920929,
+        0.6456999778747559,
+        0.5210000276565552
+      ]
+    ],
+    "ocio_reference": [
+      [
+        1.0810547039326259e-15,
+        0.0,
+        2.1087148140922635e-13
+      ],
+      [
+        0.8137772083282471,
+        0.8137766718864441,
+        0.8137959241867065
+      ],
+      [
+        0.9579952359199524,
+        0.9392344355583191,
+        0.9236505031585693
+      ],
+      [
+        0.7810668349266052,
+        0.7433159947395325,
+        0.7098339200019836
+      ]
+    ],
+    "lut_output": [
+      [
+        1.0810547039326259e-15,
+        0.0,
+        2.1087148140922635e-13
+      ],
+      [
+        0.8135054111480713,
+        0.813504159450531,
+        0.813524067401886
+      ],
+      [
+        0.9580307006835938,
+        0.9388695955276489,
+        0.9233051538467407
+      ],
+      [
+        0.7810659408569336,
+        0.7429177761077881,
+        0.7095263004302979
+      ]
+    ]
+  },
+  "safety": {
+    "bake_started": false,
+    "formal_master_modified": false,
+    "formal_runtime_pointer": "unchanged"
+  }
+}

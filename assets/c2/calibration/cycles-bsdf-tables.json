@@ -1,0 +1,60 @@
+{
+  "schema": "webgpu-c2-live-gate4b-cycles-bsdf-tables-v1",
+  "captured_at": "2026-08-14",
+  "decision": "PASS",
+  "source": {
+    "project": "Blender",
+    "version": "5.2.0 LTS",
+    "branch": "blender-v5.2-release",
+    "path": "intern/cycles/scene/shader.tables",
+    "url": "https://github.com/blender/blender/blob/blender-v5.2-release/intern/cycles/scene/shader.tables",
+    "license": "Apache-2.0",
+    "sha256": "fbde5fea5750eb32e2a638b74b97ef6a39eed29283b2f46eb139893ca3af5175"
+  },
+  "binary": {
+    "path": "/assets/c2/calibration/cycles-bsdf-tables.bin",
+    "float_count": 9248,
+    "bytes": 36992,
+    "sha256": "c7e02169ceb057940d676351074e69e747c6970d34008572a25c2b33c5e70814"
+  },
+  "tables": {
+    "table_ggx_E": {
+      "offset_float": 0,
+      "count": 1024,
+      "dimensions": [
+        32,
+        32
+      ]
+    },
+    "table_ggx_Eavg": {
+      "offset_float": 1024,
+      "count": 32,
+      "dimensions": [
+        32
+      ]
+    },
+    "table_ggx_gen_schlick_ior_s": {
+      "offset_float": 1056,
+      "count": 4096,
+      "dimensions": [
+        16,
+        16,
+        16
+      ]
+    },
+    "table_ggx_gen_schlick_s": {
+      "offset_float": 5152,
+      "count": 4096,
+      "dimensions": [
+        16,
+        16,
+        16
+      ]
+    }
+  },
+  "execution": {
+    "blender_render_started": false,
+    "blender_bake_started": false,
+    "master_saved": false
+  }
+}

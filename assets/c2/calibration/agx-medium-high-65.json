@@ -1,0 +1,25 @@
+{
+  "schema": "webgpu-c2-live-gate4b-agx-formal-lut-v1",
+  "decision": "PASS",
+  "purpose": "FORMAL_ROOM_CALIBRATION",
+  "source": {
+    "blender_version": "5.2.0 LTS",
+    "ocio_config_sha256": "47a7d83e79c1d21f49ba6c505efe311da723471688c614b5c366e1da7eb8ea3a",
+    "agx_base_lut_sha256": "e707a36f3e90ee79bc342332febf91334c02ce3974cac700ece00ca9d4507491",
+    "generator": "/opt/homebrew/bin/ociobakelut",
+    "input_space": "Linear Rec.709",
+    "display": "sRGB",
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 0,
+    "gamma": 1
+  },
+  "lut": {
+    "interpolation": "TETRAHEDRAL",
+    "cube_size": 65,
+    "float_count": 823875,
+    "bytes": 3295500,
+    "path": "/assets/c2/calibration/agx-medium-high-65.bin",
+    "sha256": "20548498c4a3edf555680972a12bc11e33d14c87947719e32bbe4a534095af8d"
+  }
+}

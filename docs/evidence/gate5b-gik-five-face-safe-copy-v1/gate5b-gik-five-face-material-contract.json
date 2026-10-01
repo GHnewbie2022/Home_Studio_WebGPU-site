@@ -1,0 +1,3288 @@
+{
+  "schema": "webgpu-c2-live-gate4b-material-contract-v2",
+  "captured_at": "2026-08-13T23:50:59+00:00",
+  "decision": "PASS",
+  "source": {
+    "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/Home_Studio_WebGPU_C2_Live/docs/evidence/gate5b-gik-five-face-safe-copy-v1/Home_Studio_GIK_FiveFace_TEST.blend",
+    "sha256_before": "bbce58582239782d08b25012e55ca6722ee36b0af5f640c710b435db2bc8fde5",
+    "sha256_after": "bbce58582239782d08b25012e55ca6722ee36b0af5f640c710b435db2bc8fde5",
+    "blender_version": "5.2.0 LTS",
+    "dirty_snapshot_before_ui_event_loop": false
+  },
+  "materials": [
+    {
+      "name": "M_BN_Plastic_White",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.8500000238418579,
+            0.8500000238418579,
+            0.8500000238418579,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.7200000286102295,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Vent_BlackAbsorber",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_ISO_Puck_Rubber",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.03500000014901161,
+            0.03500000014901161,
+            0.03500000014901161,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8799999952316284,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Stand_BlackMetal",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.07999999821186066,
+            0.07999999821186066,
+            0.07999999821186066,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0.6499999761581421,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.3199999928474426,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Stand_Aluminum",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.8199999928474426,
+            0.8500000238418579,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0.800000011920929,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.3799999952316284,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Speaker_Black",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.11999999731779099,
+            0.11999999731779099,
+            0.11999999731779099,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_KH150_Front",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "kh150_front.jpg",
+            "size": [
+              371,
+              569
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "fd78cb9e6e5830dd87b98b28a5ef10bbf55ed4569af14067dddb3c2252a17448",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_KH150_Back",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "kh150_back.jpg",
+            "size": [
+              371,
+              569
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "2f76d27182a52e2afc5132d5cbd3fefdef91cb51ad16f6f08220d3a8fb1cf27e",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_Wall_Paint",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.7871999740600586,
+            0.7591999769210815,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8999999761581421,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Bed_Sage",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5799999833106995,
+            0.6600000262260437,
+            0.5400000214576721,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.949999988079071,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_CeilingLight_Diffuser",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            1,
+            0.8071224689483643,
+            0.6512994170188904,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            0.8071224689483643,
+            0.6512994170188904,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 4,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_CeilingLight_Housing",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8799999952316284,
+            0.8600000143051147,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0.10000000149011612,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_Ceiling",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.7871999740600586,
+            0.7591999769210815,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8999999761581421,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Wood_Dark",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.36000001430511475,
+            0.25999999046325684,
+            0.18000000715255737,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.6200000047683716,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Door_Iron_Edge",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.550000011920929,
+            0.550000011920929,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0.8500000238418579,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.07500000298023224,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Door_Iron_Photo",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "iron_door.jpg",
+            "size": [
+              687,
+              1024
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "c4549561ee21d2f6a3e5d580690936c1da8c762373be926346de8edd77abce55",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "Y",
+                "scale": 1,
+                "offset": 0
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 1,
+                "offset": 0
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0.8500000238418579,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.07500000298023224,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Door_Wood_Edge",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.33000001311302185,
+            0.18000000715255737,
+            0.07999999821186066,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8999999761581421,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Door_Wood_Photo",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "wood_door.jpeg",
+            "size": [
+              1280,
+              3328
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "67354bee7562ac110609e723cc0253b9a5c7288807b96832341a2c7212e3fc13",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 1,
+                "offset": 0
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 1,
+                "offset": 0
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8999999761581421,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_Floor_Wood",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.550000011920929,
+            0.4699999988079071,
+            0.4099999964237213,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.10000000149011612,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_GIK_White_Edge",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.8199999928474426,
+            0.8199999928474426,
+            0.8199999928474426,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.9200000166893005,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_GIK_White_Vertical",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "gik244_white.jpeg",
+            "size": [
+              1440,
+              2912
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "fdec7f9b0db562efd811b3677db741cb7408d6d8e3d92b3a05c1146467dbd55c",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "UV",
+              "uv_map": "C2_GIK_FABRIC_UV"
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.9200000166893005,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_GIK_Grey_Edge",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.9200000166893005,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_GIK_Grey_Horizontal",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "gik244_grey.jpeg",
+            "size": [
+              1440,
+              2912
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "6fcdc73138808ba8fbcea0ee7c9ec131fe75853e00ce0b8a3baf49c1bf24135b",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "UV",
+              "uv_map": "C2_GIK_FABRIC_UV"
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.9200000166893005,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Plastic_Dark",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.014999999664723873,
+            0.014999999664723873,
+            0.014999999664723873,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.7200000286102295,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Wood_Warm",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.550000011920929,
+            0.3499999940395355,
+            0.17000000178813934,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.6800000071525574,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_KH750_Front",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "kh750_front.jpg",
+            "size": [
+              1170,
+              1365
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "7c063e9a9f055f5b3162f43f10ae28e3d0a4e90e04c652f3298e4551818ef249",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8199999928474426,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_KH750_Back",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "kh750_back.jpg",
+            "size": [
+              1134,
+              1323
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "a0c9270198c4fa902c843b54173eeb464bb4192e612a3f2ab4c174e166388ed5",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 0.9615384340286255,
+                "offset": 0.01923076994717121
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 0.8199999928474426,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Emission Strength": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        }
+      }
+    },
+    {
+      "name": "M_BN_Window_Backdrop",
+      "principled_node": "Principled BSDF",
+      "distribution": "MULTI_GGX",
+      "inputs": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "window_scene.png",
+            "size": [
+              1323,
+              690
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "76874358afcd49098bb6459403f6f69778003a4761181c35159ee4d9ec42f5fa",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 1,
+                "offset": 0
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 1,
+                "offset": 0
+              }
+            }
+          }
+        },
+        "Metallic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Roughness": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular IOR Level": {
+          "value": 0.5,
+          "linked": false,
+          "image": null
+        },
+        "Specular Tint": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Anisotropic Rotation": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Diffuse Roughness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Subsurface Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Transmission Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Coat Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Sheen Weight": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Thin Film Thickness": {
+          "value": 0,
+          "linked": false,
+          "image": null
+        },
+        "Alpha": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        },
+        "Emission Color": {
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "linked": true,
+          "image": {
+            "node_type": "TEX_IMAGE",
+            "node_name": "Image Texture",
+            "image": "window_scene.png",
+            "size": [
+              1323,
+              690
+            ],
+            "colorspace": "sRGB",
+            "interpolation": "Linear",
+            "extension": "CLIP",
+            "projection": "FLAT",
+            "packed": true,
+            "packed_sha256": "76874358afcd49098bb6459403f6f69778003a4761181c35159ee4d9ec42f5fa",
+            "from_socket": "Color",
+            "coordinates": {
+              "source": "Generated",
+              "x": {
+                "axis": "X",
+                "scale": 1,
+                "offset": 0
+              },
+              "y": {
+                "axis": "Z",
+                "scale": 1,
+                "offset": 0
+              }
+            }
+          }
+        },
+        "Emission Strength": {
+          "value": 1,
+          "linked": false,
+          "image": null
+        }
+      }
+    }
+  ],
+  "counts": {
+    "materials": 28,
+    "base_color_images": 9,
+    "emission_color_images": 1
+  },
+  "execution": {
+    "render_started": false,
+    "bake_started": false,
+    "source_saved": false
+  },
+  "gate5b_gik_five_face_safe_copy": {
+    "report": "docs/evidence/gate5b-gik-five-face-safe-copy-v1/gate5b-gik-five-face-safe-copy.json",
+    "uv_map": "C2_GIK_FABRIC_UV",
+    "visible_faces": 5,
+    "wall_back_flat": true
+  }
+}

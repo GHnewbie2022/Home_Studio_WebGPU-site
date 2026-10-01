@@ -1,0 +1,26 @@
+{
+  "schema": "webgpu-c2-live-gate4b-agx-probe-lut-v1",
+  "captured_at": "2026-08-14",
+  "decision": "PASS",
+  "purpose": "CAPABILITY_PROBE_ONLY",
+  "source": {
+    "blender_version": "5.2.0 LTS",
+    "ocio_config_path": "/Applications/Blender.app/Contents/Resources/5.2/datafiles/colormanagement/config.ocio",
+    "ocio_config_sha256": "47a7d83e79c1d21f49ba6c505efe311da723471688c614b5c366e1da7eb8ea3a",
+    "agx_base_lut_path": "/Applications/Blender.app/Contents/Resources/5.2/datafiles/colormanagement/luts/AgX_Base_sRGB.cube",
+    "agx_base_lut_sha256": "e707a36f3e90ee79bc342332febf91334c02ce3974cac700ece00ca9d4507491",
+    "generator": "/opt/homebrew/bin/ociobakelut",
+    "input_space": "Linear Rec.709",
+    "display": "sRGB",
+    "view": "AgX",
+    "look": "AgX - Medium High Contrast"
+  },
+  "lut": {
+    "interpolation": "TETRAHEDRAL_IN_TSL",
+    "cube_size": 17,
+    "float_count": 14739,
+    "bytes": 58956,
+    "path": "/assets/c2/calibration/agx-medium-high-17.bin",
+    "sha256": "4c55322000f5e790a678dc1c425b50a8794e5ac25188df6e0a27b9032b3e08b8"
+  }
+}

@@ -1,0 +1,712 @@
+{
+  "area_light": {
+    "gltf_light_extension_count": 0,
+    "policy": "preserve_marker_node_and_source_extras",
+    "source_object": "Ceiling_Light_Emitter",
+    "source_type": "AREA"
+  },
+  "decision": "PASS",
+  "excluded_helper_meshes": [
+    "AirConditioner_Vent_Cutter",
+    "Door_North_Cutter",
+    "Door_West_Cutter",
+    "Outlet_East_01_Recess_Cutter",
+    "Outlet_East_02_Recess_Cutter",
+    "Outlet_North_Recess_Cutter",
+    "Outlet_South_Cabinet_Recess_Cutter",
+    "Outlet_West_01_Recess_Cutter",
+    "Outlet_West_02_Recess_Cutter",
+    "Window_South_Cutter"
+  ],
+  "export_settings": {
+    "animations": false,
+    "apply_modifiers": true,
+    "area_light_policy": "preserve_marker_node_and_source_extras",
+    "cameras": true,
+    "format": "GLB",
+    "images_embedded": true,
+    "lights": true,
+    "materials": true,
+    "selection_only": true,
+    "y_up": true
+  },
+  "exporter": {
+    "blender_build_hash": "fbe6228777e7",
+    "blender_version": "5.2.0 LTS",
+    "commit": "47114d72eed1c9230a242d1a82a5a54db897c2b8",
+    "gltf_generator": "Khronos glTF Blender I/O v5.2.39",
+    "script": "tools/gate3_export.py",
+    "script_sha256": "8678d4a51e45525d526bb85f5f132e047fa07cc5c7f7d14144fee8a20fa3c2b3"
+  },
+  "formal_cameras": {
+    "Camera_View_01": {
+      "clip_end": 1000.0,
+      "clip_start": 0.009999999776482582,
+      "lens_mm": 23.05178451538086,
+      "matrix_world": [
+        [
+          0.921061,
+          0.069717,
+          -0.383127,
+          -1.4
+        ],
+        [
+          -0.389418,
+          0.164897,
+          -0.90618,
+          -3.9
+        ],
+        [
+          -0.0,
+          0.983844,
+          0.17903,
+          2.3
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sensor_width_mm": 36.0
+    },
+    "Camera_View_02": {
+      "clip_end": 1000.0,
+      "clip_start": 0.009999999776482582,
+      "lens_mm": 23.05178451538086,
+      "matrix_world": [
+        [
+          0.968912,
+          -0.073113,
+          -0.236354,
+          -0.9
+        ],
+        [
+          -0.247404,
+          -0.286333,
+          -0.925637,
+          -3.7
+        ],
+        [
+          0.0,
+          0.955337,
+          -0.29552,
+          1.1
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sensor_width_mm": 36.0
+    },
+    "Camera_View_03": {
+      "clip_end": 1000.0,
+      "clip_start": 0.009999999776482582,
+      "lens_mm": 23.05178451538086,
+      "matrix_world": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          1.3
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sensor_width_mm": 36.0
+    },
+    "Camera_Walk": {
+      "clip_end": 1000.0,
+      "clip_start": 0.009999999776482582,
+      "lens_mm": 23.05178451538086,
+      "matrix_world": [
+        [
+          -0.602544,
+          0.105258,
+          0.791114,
+          -1.367025
+        ],
+        [
+          0.798085,
+          0.079449,
+          0.597283,
+          1.794669
+        ],
+        [
+          1.6e-05,
+          0.991266,
+          -0.131877,
+          1.133006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sensor_width_mm": 36.0
+    }
+  },
+  "generated_at": "2026-08-12T03:48:19+08:00",
+  "glb": {
+    "bytes": 8553448,
+    "path": "public/assets/c2/home-studio-c2.glb",
+    "sha256": "ebecf2e351a0fac007b8ecbfa865bf483aa5b5a40c975d94d29fa2ae4af7608f",
+    "structure": {
+      "camera_count": 4,
+      "camera_node_names": [
+        "Camera_View_01",
+        "Camera_View_02",
+        "Camera_View_03",
+        "Camera_Walk"
+      ],
+      "external_uri_count": 0,
+      "generator": "Khronos glTF Blender I/O v5.2.39",
+      "image_count": 9,
+      "light_count": 0,
+      "material_count": 28,
+      "mesh_count": 85,
+      "mesh_node_count": 85,
+      "node_count": 101,
+      "node_names": [
+        "AirConditioner_Assembly",
+        "AirConditioner_Main",
+        "AirConditioner_Vent_Cavity",
+        "Audio_Left",
+        "Audio_Right",
+        "Beam_East",
+        "Beam_West",
+        "Bed_Northeast",
+        "Camera_View_01",
+        "Camera_View_02",
+        "Camera_View_03",
+        "Camera_Walk",
+        "Ceiling_Light_C2_Assembly",
+        "Ceiling_Light_Diffuser",
+        "Ceiling_Light_Emitter",
+        "Ceiling_Light_Housing",
+        "Ceiling_Light_Mount",
+        "Ceiling_Slab",
+        "Column_SE",
+        "Column_SW",
+        "Desk_Central",
+        "Door_Iron_West",
+        "Door_Wood_North",
+        "Floor_Slab",
+        "GIK_C2_East_01",
+        "GIK_C2_East_02",
+        "GIK_C2_East_03",
+        "GIK_C2_North_01",
+        "GIK_C2_North_02",
+        "GIK_C2_North_03",
+        "GIK_C2_West_01",
+        "GIK_C2_West_02",
+        "GIK_C2_West_03",
+        "Left_ISO_Puck_01",
+        "Left_ISO_Puck_02",
+        "Left_ISO_Puck_03",
+        "Left_ISO_Puck_04",
+        "Left_Stand_Base",
+        "Left_Stand_Pillar",
+        "Left_Stand_Top",
+        "Outlet_East_01",
+        "Outlet_East_01_Assembly",
+        "Outlet_East_01_Inset_R1_C1",
+        "Outlet_East_01_Inset_R1_C2",
+        "Outlet_East_01_Inset_R2_C1",
+        "Outlet_East_01_Inset_R2_C2",
+        "Outlet_East_02",
+        "Outlet_East_02_Assembly",
+        "Outlet_East_02_Inset_R1_C1",
+        "Outlet_East_02_Inset_R1_C2",
+        "Outlet_East_02_Inset_R2_C1",
+        "Outlet_East_02_Inset_R2_C2",
+        "Outlet_North",
+        "Outlet_North_Assembly",
+        "Outlet_North_Inset_R1_C1",
+        "Outlet_North_Inset_R1_C2",
+        "Outlet_North_Inset_R2_C1",
+        "Outlet_North_Inset_R2_C2",
+        "Outlet_South_Cabinet",
+        "Outlet_South_Cabinet_Assembly",
+        "Outlet_South_Cabinet_Inset_Ground",
+        "Outlet_South_Cabinet_Inset_R1_C1",
+        "Outlet_South_Cabinet_Inset_R1_C2",
+        "Outlet_South_Cabinet_Inset_R2_C1",
+        "Outlet_South_Cabinet_Inset_R2_C2",
+        "Outlet_West_01",
+        "Outlet_West_01_Assembly",
+        "Outlet_West_01_Inset_R1_C1",
+        "Outlet_West_01_Inset_R1_C2",
+        "Outlet_West_01_Inset_R2_C1",
+        "Outlet_West_01_Inset_R2_C2",
+        "Outlet_West_02",
+        "Outlet_West_02_Assembly",
+        "Outlet_West_02_Inset_R1_C1",
+        "Outlet_West_02_Inset_R1_C2",
+        "Outlet_West_02_Inset_R2_C1",
+        "Outlet_West_02_Inset_R2_C2",
+        "Right_ISO_Puck_01",
+        "Right_ISO_Puck_02",
+        "Right_ISO_Puck_03",
+        "Right_ISO_Puck_04",
+        "Right_Stand_Base",
+        "Right_Stand_Pillar",
+        "Right_Stand_Top",
+        "South_Bookcase",
+        "South_Drawer_01",
+        "South_Drawer_02",
+        "South_Drawer_03",
+        "South_Drawer_04",
+        "South_System_Desk",
+        "South_System_Furniture",
+        "Speaker_KH150_Left",
+        "Speaker_KH150_Right",
+        "Subwoofer_KH750",
+        "Switch_West_Button",
+        "Switch_West_Plate",
+        "Wall_East",
+        "Wall_North",
+        "Wall_South",
+        "Wall_West",
+        "Window_South_Backdrop"
+      ],
+      "texture_count": 10
+    }
+  },
+  "schema": "webgpu-c2-live-gate3-asset-manifest-v1",
+  "source": {
+    "filepath": "/Users/eajrockmacmini/Documents/VS Code/My Project/Home_Studio_3D/blender_native/Home_Studio_Master.blend",
+    "gate2_manifest": "docs/evidence/gate2-dry-run-manifest.json",
+    "gate2_manifest_sha256": "dd0e44aa9ab5c8d9d3894f2ace7984bbd99cc0454207a0bd442676f0d8090ac5",
+    "sha256_after": "7dabb8a11cabc61dae9020927361ee6c0333cc0ef2568d538c374700cb82db86",
+    "sha256_before": "7dabb8a11cabc61dae9020927361ee6c0333cc0ef2568d538c374700cb82db86"
+  },
+  "source_datablocks": [
+    {
+      "name": "AirConditioner_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "AirConditioner_Main",
+      "type": "MESH"
+    },
+    {
+      "name": "AirConditioner_Vent_Cavity",
+      "type": "MESH"
+    },
+    {
+      "name": "Audio_Left",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Audio_Right",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Beam_East",
+      "type": "MESH"
+    },
+    {
+      "name": "Beam_West",
+      "type": "MESH"
+    },
+    {
+      "name": "Bed_Northeast",
+      "type": "MESH"
+    },
+    {
+      "name": "Camera_View_01",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_View_02",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_View_03",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Camera_Walk",
+      "type": "CAMERA"
+    },
+    {
+      "name": "Ceiling_Light_C2_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Ceiling_Light_Diffuser",
+      "type": "MESH"
+    },
+    {
+      "name": "Ceiling_Light_Emitter",
+      "type": "LIGHT"
+    },
+    {
+      "name": "Ceiling_Light_Housing",
+      "type": "MESH"
+    },
+    {
+      "name": "Ceiling_Light_Mount",
+      "type": "MESH"
+    },
+    {
+      "name": "Ceiling_Slab",
+      "type": "MESH"
+    },
+    {
+      "name": "Column_SE",
+      "type": "MESH"
+    },
+    {
+      "name": "Column_SW",
+      "type": "MESH"
+    },
+    {
+      "name": "Desk_Central",
+      "type": "MESH"
+    },
+    {
+      "name": "Door_Iron_West",
+      "type": "MESH"
+    },
+    {
+      "name": "Door_Wood_North",
+      "type": "MESH"
+    },
+    {
+      "name": "Floor_Slab",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_East_01",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_East_02",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_East_03",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_North_01",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_North_02",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_North_03",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_West_01",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_West_02",
+      "type": "MESH"
+    },
+    {
+      "name": "GIK_C2_West_03",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_ISO_Puck_01",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_ISO_Puck_02",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_ISO_Puck_03",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_ISO_Puck_04",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_Stand_Base",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_Stand_Pillar",
+      "type": "MESH"
+    },
+    {
+      "name": "Left_Stand_Top",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_01",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_01_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_East_01_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_01_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_01_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_01_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_02",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_02_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_East_02_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_02_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_02_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_East_02_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_North",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_North_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_North_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_North_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_North_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_North_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Inset_Ground",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_South_Cabinet_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_01",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_01_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_West_01_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_01_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_01_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_01_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_02",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_02_Assembly",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Outlet_West_02_Inset_R1_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_02_Inset_R1_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_02_Inset_R2_C1",
+      "type": "MESH"
+    },
+    {
+      "name": "Outlet_West_02_Inset_R2_C2",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_ISO_Puck_01",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_ISO_Puck_02",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_ISO_Puck_03",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_ISO_Puck_04",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_Stand_Base",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_Stand_Pillar",
+      "type": "MESH"
+    },
+    {
+      "name": "Right_Stand_Top",
+      "type": "MESH"
+    },
+    {
+      "name": "South_Bookcase",
+      "type": "MESH"
+    },
+    {
+      "name": "South_Drawer_01",
+      "type": "MESH"
+    },
+    {
+      "name": "South_Drawer_02",
+      "type": "MESH"
+    },
+    {
+      "name": "South_Drawer_03",
+      "type": "MESH"
+    },
+    {
+      "name": "South_Drawer_04",
+      "type": "MESH"
+    },
+    {
+      "name": "South_System_Desk",
+      "type": "MESH"
+    },
+    {
+      "name": "South_System_Furniture",
+      "type": "EMPTY"
+    },
+    {
+      "name": "Speaker_KH150_Left",
+      "type": "MESH"
+    },
+    {
+      "name": "Speaker_KH150_Right",
+      "type": "MESH"
+    },
+    {
+      "name": "Subwoofer_KH750",
+      "type": "MESH"
+    },
+    {
+      "name": "Switch_West_Button",
+      "type": "MESH"
+    },
+    {
+      "name": "Switch_West_Plate",
+      "type": "MESH"
+    },
+    {
+      "name": "Wall_East",
+      "type": "MESH"
+    },
+    {
+      "name": "Wall_North",
+      "type": "MESH"
+    },
+    {
+      "name": "Wall_South",
+      "type": "MESH"
+    },
+    {
+      "name": "Wall_West",
+      "type": "MESH"
+    },
+    {
+      "name": "Window_South_Backdrop",
+      "type": "MESH"
+    }
+  ]
+}

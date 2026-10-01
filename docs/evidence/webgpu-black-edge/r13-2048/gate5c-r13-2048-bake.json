@@ -1,0 +1,314 @@
+{
+  "schema": "webgpu-c2-live-gate5c-full-room-bake-v2",
+  "captured_at": "2026-09-28T11:34:26+00:00",
+  "decision": "READY_FOR_REVIEW",
+  "source": {
+    "safe_copy": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/Home_Studio_GIK_FiveFace_R13_TEST.blend",
+    "safe_copy_sha256": "bbce58582239782d08b25012e55ca6722ee36b0af5f640c710b435db2bc8fde5",
+    "formal_master_sha256_before": "7dabb8a11cabc61dae9020927361ee6c0333cc0ef2568d538c374700cb82db86",
+    "formal_master_sha256_after": "7dabb8a11cabc61dae9020927361ee6c0333cc0ef2568d538c374700cb82db86",
+    "test_main_sha256": "f3ab75b893addc7a265d60a6dcf1193998ff349c5ad1cc497faa577ccb67546e",
+    "receiver_map_contract": {
+      "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/Home_Studio_WebGPU_C2_Live/docs/evidence/gate5c-full-room-indirect-blackline-architecture-32/gate5c-black-line-architecture-32-bake.json",
+      "sha256": "a5beae848eba1daa1824bf05d003a6ea89c691f50c772414fb070b48f97fed0e"
+    }
+  },
+  "scope": {
+    "receiver_count": 83,
+    "layer_receiver_counts": [
+      30,
+      53
+    ],
+    "all_receiver_names_unique": true,
+    "atlas_size": [
+      4096,
+      4096
+    ],
+    "samples": 2048,
+    "type": "DIFFUSE",
+    "content": "indirect_diffuse_illumination",
+    "pass_filter": [
+      "INDIRECT"
+    ],
+    "bake_albedo_free": true,
+    "multiply_albedo_after_lookup": true
+  },
+  "integrations": {
+    "black_line_geometry": {
+      "derived_glb": {
+        "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/runtime-preview/public/docs/evidence/webgpu-black-edge/r13-2048/home-studio-c2-gate5c-black-line-architecture-v1.glb",
+        "public_url": "/docs/evidence/webgpu-black-edge/r13-2048/home-studio-c2-gate5c-black-line-architecture-v1.glb",
+        "bytes": 8569520,
+        "sha256": "de88a9ad535fd7cc6c96cc28a416a3ed8ee4e86cb9ce1603737437233737c9fa"
+      }
+    },
+    "patch_manifest": {
+      "polygon_region_count": 1029
+    }
+  },
+  "execution": {
+    "mode": "two-layer-2048-spp-indirect-only",
+    "formal_result": {
+      "layers": [
+        {
+          "layer": 0,
+          "receivers": [
+            "AirConditioner_Vent_Cavity",
+            "Beam_East",
+            "Beam_West",
+            "Ceiling_Slab",
+            "Column_SW",
+            "Desk_Central",
+            "GIK_C2_East_01",
+            "GIK_C2_North_01",
+            "GIK_C2_North_03",
+            "GIK_C2_West_02",
+            "GIK_C2_West_03",
+            "Left_ISO_Puck_02",
+            "Left_ISO_Puck_04",
+            "Outlet_East_01",
+            "Outlet_South_Cabinet",
+            "Outlet_West_02",
+            "Outlet_West_02_Inset_R2_C2",
+            "Right_ISO_Puck_02",
+            "Right_ISO_Puck_04",
+            "Right_Stand_Base",
+            "Right_Stand_Pillar",
+            "Right_Stand_Top",
+            "South_Drawer_02",
+            "South_Drawer_04",
+            "South_System_Desk",
+            "Speaker_KH150_Right",
+            "Subwoofer_KH750",
+            "Switch_West_Plate",
+            "Wall_North",
+            "Wall_West"
+          ],
+          "rgba16f": {
+            "sha256": "c14853762823aa8eb4316f1573084b12e3117b68b37e5512d0bfc237ed9efb95",
+            "bytes": 134217728,
+            "source_report": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-0/bake-output-result.json"
+          },
+          "exr": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/runtime-preview/public/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-0.exr",
+            "public_url": "/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-0.exr",
+            "sha256": "2f37b1b26820431a83088c02685b6ad38a73a284e1de86f5e831440e5c4436e5",
+            "bytes": 19556688
+          },
+          "bake_report": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-0/bake-output-result.json",
+            "sha256": "2e95a3ec162118fcca4e9304b5eda5991df56bcde19de5c37a17abc1436745a2"
+          },
+          "host_validation": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-0/host-validation.json",
+            "sha256": "53f82d05df444208331ea348cd02313cdbfd4194748673e68273bff738184fc1",
+            "status": "PASS"
+          },
+          "covered_pixels": {
+            "raw": 11893438,
+            "post_guard_pre_extension": 11893438,
+            "rgba16f": 11893438,
+            "expected": 11893438
+          },
+          "zero_guard": {
+            "algorithm": "covered_exact_zero_nearest_ring_average",
+            "pixels": 4,
+            "epsilon": 1e-08,
+            "initial_transition_pixel_count": 135022,
+            "filled_pass_counts": [
+              135022,
+              63146,
+              45633,
+              42694
+            ],
+            "filled_pixel_count": 286495,
+            "remaining_transition_pixel_count": 43225
+          },
+          "geometry_extension": null
+        },
+        {
+          "layer": 1,
+          "receivers": [
+            "AirConditioner_Main",
+            "Bed_Northeast",
+            "Ceiling_Light_Housing",
+            "Ceiling_Light_Mount",
+            "Column_SE",
+            "Door_Iron_West",
+            "Door_Wood_North",
+            "Floor_Slab",
+            "GIK_C2_East_02",
+            "GIK_C2_East_03",
+            "GIK_C2_North_02",
+            "GIK_C2_West_01",
+            "Left_ISO_Puck_01",
+            "Left_ISO_Puck_03",
+            "Left_Stand_Base",
+            "Left_Stand_Pillar",
+            "Left_Stand_Top",
+            "Outlet_East_01_Inset_R1_C1",
+            "Outlet_East_01_Inset_R1_C2",
+            "Outlet_East_01_Inset_R2_C1",
+            "Outlet_East_01_Inset_R2_C2",
+            "Outlet_East_02",
+            "Outlet_East_02_Inset_R1_C1",
+            "Outlet_East_02_Inset_R1_C2",
+            "Outlet_East_02_Inset_R2_C1",
+            "Outlet_East_02_Inset_R2_C2",
+            "Outlet_North",
+            "Outlet_North_Inset_R1_C1",
+            "Outlet_North_Inset_R1_C2",
+            "Outlet_North_Inset_R2_C1",
+            "Outlet_North_Inset_R2_C2",
+            "Outlet_South_Cabinet_Inset_Ground",
+            "Outlet_South_Cabinet_Inset_R1_C1",
+            "Outlet_South_Cabinet_Inset_R1_C2",
+            "Outlet_South_Cabinet_Inset_R2_C1",
+            "Outlet_South_Cabinet_Inset_R2_C2",
+            "Outlet_West_01",
+            "Outlet_West_01_Inset_R1_C1",
+            "Outlet_West_01_Inset_R1_C2",
+            "Outlet_West_01_Inset_R2_C1",
+            "Outlet_West_01_Inset_R2_C2",
+            "Outlet_West_02_Inset_R1_C1",
+            "Outlet_West_02_Inset_R1_C2",
+            "Outlet_West_02_Inset_R2_C1",
+            "Right_ISO_Puck_01",
+            "Right_ISO_Puck_03",
+            "South_Bookcase",
+            "South_Drawer_01",
+            "South_Drawer_03",
+            "Speaker_KH150_Left",
+            "Switch_West_Button",
+            "Wall_East",
+            "Wall_South"
+          ],
+          "rgba16f": {
+            "sha256": "23171a060446e74009619cbe4d60186a7f2152541e8e6e9dbde4c57804fcca71",
+            "bytes": 134217728,
+            "source_report": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-1-attempt-02/bake-output-result.json"
+          },
+          "exr": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/runtime-preview/public/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-1.exr",
+            "public_url": "/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-1.exr",
+            "sha256": "7675cbcd96161989fb41a4fac8c27371efb62be07034ec3480561f62ee8289fd",
+            "bytes": 17976679
+          },
+          "bake_report": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-1-attempt-02/bake-output-result.json",
+            "sha256": "012f841d22dcedddd6c06fc547ba0f79387507dc5383b87a1d19154a71ececea"
+          },
+          "host_validation": {
+            "path": "/Users/eajrockmacmini/Documents/VS Code/My Project/home studo gpt6分工測試/docs/evidence/webgpu-black-edge/20260928-indirect-2048-modal-r13/experiment/layer-1-attempt-02/host-validation.json",
+            "sha256": "31dcaa6bf2763e4338d293bee67b8b3169af4a9ba8628e637df67a08cd23d20a",
+            "status": "PASS"
+          },
+          "covered_pixels": {
+            "raw": 11766604,
+            "post_guard_pre_extension": 11766604,
+            "rgba16f": 11766604,
+            "expected": 11766604
+          },
+          "zero_guard": {
+            "algorithm": "covered_exact_zero_nearest_ring_average",
+            "pixels": 4,
+            "epsilon": 1e-08,
+            "initial_transition_pixel_count": 134258,
+            "filled_pass_counts": [
+              134258,
+              62249,
+              46618,
+              44798
+            ],
+            "filled_pixel_count": 287923,
+            "remaining_transition_pixel_count": 46541
+          },
+          "geometry_extension": {
+            "algorithm": "geometry_aware_same_wall_nearest_ring_average",
+            "wall_face_pixel_count": 1364337,
+            "hidden_pixel_count": 205720,
+            "initial_boundary_underlit_pixel_count": 2024,
+            "filled_pass_counts": [
+              3294,
+              3274,
+              3254,
+              3234
+            ],
+            "filled_pixel_count": 13056,
+            "remaining_unfilled_boundary_pixel_count": 0,
+            "visible_wall_modified_pixel_count": 0,
+            "occluder_bounds": [
+              {
+                "name": "GIK_C2_East_01",
+                "minimum": [
+                  1.7919999361038208,
+                  0.08899998664855957,
+                  0.7949999570846558
+                ],
+                "maximum": [
+                  1.909999966621399,
+                  0.6890000104904175,
+                  1.9950000047683716
+                ],
+                "pixel_count": 68452
+              },
+              {
+                "name": "GIK_C2_East_02",
+                "minimum": [
+                  1.7919999361038208,
+                  -0.7979999780654907,
+                  0.6549999713897705
+                ],
+                "maximum": [
+                  1.909999966621399,
+                  -0.1979999840259552,
+                  1.8550000190734863
+                ],
+                "pixel_count": 68823
+              },
+              {
+                "name": "GIK_C2_East_03",
+                "minimum": [
+                  1.8592000007629395,
+                  -1.684999942779541,
+                  0.7949999570846558
+                ],
+                "maximum": [
+                  1.9100000858306885,
+                  -1.0850000381469727,
+                  1.9950000047683716
+                ],
+                "pixel_count": 68452
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "r13_runtime_binding": {
+    "run_id": "20260928-indirect-2048-modal-r13",
+    "direct_light_runtime_contract": "32-spp-live-area-light-with-bvh-visibility-query",
+    "baked_components": [
+      "INDIRECT diffuse only"
+    ],
+    "live_direct_baked": false,
+    "layers": [
+      {
+        "layer": 0,
+        "public_url": "/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-0.exr",
+        "sha256": "2f37b1b26820431a83088c02685b6ad38a73a284e1de86f5e831440e5c4436e5"
+      },
+      {
+        "layer": 1,
+        "public_url": "/docs/evidence/webgpu-black-edge/r13-2048/gate5c-r13-lightmap-layer-1.exr",
+        "sha256": "7675cbcd96161989fb41a4fac8c27371efb62be07034ec3480561f62ee8289fd"
+      }
+    ]
+  },
+  "safety": {
+    "formal_master_modified": false,
+    "test_main_modified": false,
+    "safe_copy_saved": false
+  }
+}
